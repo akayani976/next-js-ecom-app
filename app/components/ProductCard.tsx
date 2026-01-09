@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Product } from "../lib/definition"
+import AddToCartButton from "./AddToCartButton";
 
 export function ProductCard({product}: {product: Product}) {
     return (
@@ -15,7 +16,7 @@ export function ProductCard({product}: {product: Product}) {
                 <p className="text-sm text-gray-500">{product.category}</p>
                 <div className="flex flex-row items-center justify-between">
                     <p className="text-lg font-semibold text-black">${product.price}</p>
-                    <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Add to Cart</button>
+                    <AddToCartButton />
                 </div>
             </div>
         </div>
