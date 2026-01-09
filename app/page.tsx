@@ -9,7 +9,7 @@ export default function Home() {
         <section className="flex flex-col items-center justify-center min-h-[60vh] bg-gray-200">
           <h1 className="text-black text-5xl font-bold">Welcome to our e-commerce store</h1>
           <p className="text-gray-500 text-2xl mt-6">Discover amazing products at unbeatable prices</p>
-          <ShopNowButton showIcon={true} />
+          <ShopNowButton showIcon={true} topMargin={10} />
         </section>
         <div className="flex flex-row items-center justify-center bg-white dark:bg-white flex-1 w-full gap-20 py-20">
             <HomePageCards icon={HiCheck} title="Quality Products" description="Carefully curated selection of high-quality products" />
